@@ -1,0 +1,57 @@
+{
+	"env": {
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"google"
+	],
+	"parserOptions": {
+		"ecmaVersion": 9,
+		"sourceType": "module"
+	},
+	"rules": {
+		"indent": [
+			"error",
+			"tab"
+		],
+		"no-tabs": 0,
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"quotes": [
+			"error",
+			"single",
+			{
+				"allowTemplateLiterals": true
+			}
+		],
+		"semi": [
+			"error",
+			"never"
+		],
+		"max-len": 0,
+		"no-console": 0,
+		"camelcase": [
+			2,
+			{
+				"properties": "always",
+				"allow": [
+					"fields_items",
+					"select_all",
+					"red_start_color",
+					"green_start_color",
+					"blue_start_color",
+					"alpha_start_color",
+					"red_end_color",
+					"green_end_color",
+					"blue_end_color",
+					"alpha_end_color",
+					"first_connect"
+				]
+			}
+		]
+	}
+}
